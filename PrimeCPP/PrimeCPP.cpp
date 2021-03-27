@@ -57,9 +57,9 @@ class prime_sieve
       prime_sieve(int n)
       {
           sieveSize = n;
-          rawbits = (unsigned char *) malloc(n / 8 + 1);
+          rawbits = (unsigned char *) malloc(n / 16 + 1);
           if (rawbits)
-            memset(rawbits, 0xff, n / 8 + 1);
+            memset(rawbits, 0xff, n / 16 + 1);
       }
 
       ~prime_sieve()
